@@ -1,0 +1,49 @@
+.inicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background-color: $boddy1;
+
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-size: 1.6rem;
+            color: $font;
+        }
+        h2{
+            font-size: 4.1rem;
+            color: #ffffff;
+        }
+
+        .hablemos{
+            @extend .btn;
+            background-color: $segundario;
+            color: #ffffff;
+            font-size: 1.1rem;
+            width: 250px;
+            margin-top: 10px;
+
+            &:hover{
+                background-color: transparent;
+                border: solid 1px $segundario;
+                color: $segundario;
+                transition: .3s;
+            }
+        }
+    }
+
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 300px;
+            border-radius: 100%;
+            
+        }
+    }
+}

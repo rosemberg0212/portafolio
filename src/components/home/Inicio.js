@@ -1,5 +1,5 @@
 import React from 'react'
-import foto from '../../img/IMG_20210921_134434.jpg';
+import video from '../../img/Logo-2.mp4'
 
 const Inicio = () => {
     return (
@@ -13,7 +13,11 @@ const Inicio = () => {
                         <button className='hablemos'>Hablemos</button>
                     </div>
                 </div>
-                <div className='img'><img src={foto} alt='foto'/></div>
+                <div className='img'>
+                    <video muted autoPlay loop>
+                        <source src={video} type='video/mp4' />
+                    </video>
+                </div>
             </div>
         </>
     )

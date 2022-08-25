@@ -10,11 +10,11 @@
         align-items: center;
 
         p{
-            font-size: 1.6rem;
+            font-size: 1.7rem;
             color: $font;
         }
         h2{
-            font-size: 4.1rem;
+            font-size: 4.2rem;
             color: #ffffff;
         }
 
@@ -42,8 +42,83 @@
 
         img{
             width: 300px;
-            border-radius: 100%;
+            border-radius: 100%;   
+        }
+
+        video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             
         }
+    }
+}
+
+.about{
+    background-color: $boddy2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 450px;
+
+    .title{
+        @extend .flex;
+        background-image: url('../img/about_shap_bg.png');
+        object-fit: contain;
+        background-size: cover;
+        background-position: center;
+        h2{
+            font-size: 4.2rem;
+            color: $font;
+        }
+    }
+
+    .info{
+        @extend .flex;
+        p{
+            font-size: 1.1rem;
+            color: $font;
+        }
+
+        .btnG{
+            button{
+                @extend .btn;
+                background-color: $segundario;
+                color: #ffffff;
+                width: 120px;
+                font-size: 1rem;
+                margin: 10px;
+
+                &:hover{
+                    background-color: transparent;
+                    border: solid 1px $segundario;
+                    color: $segundario;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+
+.work{
+    @extend .flex;
+    background-color: $boddy1;
+
+    h2{
+        font-size: 3.5rem;
+        color: $font;
+        margin-top: 80px;
+    }
+
+    p{
+        font-size: 1.1rem;
+        color: $font;
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
     }
 }

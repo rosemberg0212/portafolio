@@ -4,10 +4,22 @@
   box-sizing: border-box;
 }
 
-.btn, .inicio .info .hablemos {
+html {
+  scroll-behavior: smooth;
+}
+
+.btn, .about .info .btnG button, .inicio .info .hablemos {
   height: 50px;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
+}
+
+.flex, .work, .about .info, .about .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {
@@ -17,6 +29,9 @@
   justify-content: space-between;
   background-color: #252525;
   padding: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .navbar a {
   text-decoration: none;
@@ -79,11 +94,11 @@
   align-items: center;
 }
 .inicio .info p {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #cccccc;
 }
 .inicio .info h2 {
-  font-size: 4.1rem;
+  font-size: 4.2rem;
   color: #ffffff;
 }
 .inicio .info .hablemos {
@@ -107,4 +122,137 @@
 .inicio .img img {
   width: 300px;
   border-radius: 100%;
+}
+.inicio .img video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about {
+  background-color: #525252;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 450px;
+}
+.about .title {
+  background-image: url("../img/about_shap_bg.png");
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-size: cover;
+  background-position: center;
+}
+.about .title h2 {
+  font-size: 4.2rem;
+  color: #cccccc;
+}
+.about .info p {
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+.about .info .btnG button {
+  background-color: #feb633;
+  color: #ffffff;
+  width: 120px;
+  font-size: 1rem;
+  margin: 10px;
+}
+.about .info .btnG button:hover {
+  background-color: transparent;
+  border: solid 1px #feb633;
+  color: #feb633;
+  transition: 0.3s;
+}
+
+.work {
+  background-color: #363535;
+}
+.work h2 {
+  font-size: 3.5rem;
+  color: #cccccc;
+  margin-top: 80px;
+}
+.work p {
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+.work .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+}
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #cccccc;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: rgb(3, 35, 54);
+  padding: 10px;
+  color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.card .back .link {
+  border-top: solid 1px #cccccc;
+  height: 50px;
+  line-height: 50px;
+}
+.card .back .link a {
+  color: #cccccc;
+}
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.card .back p {
+  letter-spacing: 1px;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
 }/*# sourceMappingURL=main.css.map */

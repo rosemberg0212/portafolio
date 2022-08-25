@@ -12,10 +12,11 @@ const Navbar = () => {
                 <label for='toggler'><FiMenu /></label>
                 <div className='menu'>
                     <ul className='list'>
-                        <li><Link to='/'>Inicio</Link></li>
-                        <li><Link to='/'>Sobre Mí</Link></li>
-                        <li><Link to='/'>Portafolio</Link></li>
-                        <li><Link to='/'>Contacto</Link></li>
+                        
+                        <li><a href='#home' id='1'>Inicio</a></li>
+                        <li><a href='#about' id='2'>Sobre Mí</a></li>
+                        <li><a href='#work' id='3'>Portafolio</a></li>
+                        <li><a href='#contacto' id='4'>Contacto</a></li>
                     </ul>
                 </div>
             </nav>

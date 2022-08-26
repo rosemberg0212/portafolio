@@ -1,0 +1,14 @@
+.footer{
+    background-color: $boddy2;
+    height: 60px;
+    border-top: solid 1px $boddy1;
+    color: $font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+    span{
+        color: $segundario;
+    }
+}

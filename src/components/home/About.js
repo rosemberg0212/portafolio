@@ -12,10 +12,10 @@ const About = () => {
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-        <br/>
+        <br />
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.</p>
         <div className='btnG'>
-          <button>Ver trabajos</button>
+          <a href='#work'><button>Ver trabajos</button></a>
           <button>Descargar CV</button>
         </div>
       </div>

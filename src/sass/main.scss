@@ -19,6 +19,13 @@ $boddy2: #525252;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        border: solid 1px $segundario;
+        color: $segundario;
+        transition: .3s;
+    }
 }
 
 .flex{
@@ -31,3 +38,4 @@ $boddy2: #525252;
 @import 'navbar';
 @import 'home';
 @import 'card';
+@import 'footer';

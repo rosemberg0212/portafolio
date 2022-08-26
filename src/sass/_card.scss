@@ -40,7 +40,7 @@
 
     .back{
         transform: perspective(600px) rotateY(180deg);
-        background-color: rgb(3, 35, 54);
+        background-color: $boddy2;
         padding: 10px;
         color: $font;
         display: flex;

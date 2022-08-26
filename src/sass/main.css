@@ -8,11 +8,17 @@ html {
   scroll-behavior: smooth;
 }
 
-.btn, .about .info .btnG button, .inicio .info .hablemos {
+.btn, .contact .grid .inputs .btn-s, .about .info .btnG button, .inicio .info .hablemos {
   height: 50px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+.btn:hover, .contact .grid .inputs .btn-s:hover, .about .info .btnG button:hover, .inicio .info .hablemos:hover {
+  background-color: transparent;
+  border: solid 1px #feb633;
+  color: #feb633;
+  transition: 0.3s;
 }
 
 .flex, .work, .about .info, .about .title {
@@ -158,12 +164,6 @@ html {
   font-size: 1rem;
   margin: 10px;
 }
-.about .info .btnG button:hover {
-  background-color: transparent;
-  border: solid 1px #feb633;
-  color: #feb633;
-  transition: 0.3s;
-}
 
 .work {
   background-color: #363535;
@@ -183,6 +183,87 @@ html {
   justify-content: center;
   gap: 20px;
   padding: 20px;
+}
+
+.contact {
+  width: 100%;
+  background-color: #525252;
+  padding-top: 80px;
+}
+.contact h2 {
+  font-size: 3.5rem;
+  color: #cccccc;
+  text-align: center;
+}
+.contact .grid {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.contact .grid .info-contact {
+  color: #cccccc;
+  padding-left: 15%;
+}
+.contact .grid .info-contact h3 {
+  font-size: 1.4rem;
+}
+.contact .grid .info-contact p {
+  font-size: 1.1rem;
+  margin: 35px 0;
+}
+.contact .grid .info-contact .info-g .icons {
+  margin-top: 15px;
+}
+.contact .grid .info-contact .info-g .icons a {
+  color: #cccccc;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.contact .grid .inputs {
+  color: #cccccc;
+  padding-right: 15%;
+}
+.contact .grid .inputs .flex-i {
+  display: flex;
+  flex-direction: column;
+}
+.contact .grid .inputs .num-mail {
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+}
+.contact .grid .inputs .num-mail input {
+  width: 350px;
+}
+.contact .grid .inputs input {
+  height: 60px;
+  border: none;
+  border-radius: 8px;
+  background-color: #363535;
+  margin-top: 5px;
+  padding-left: 25px;
+  font-size: 1rem;
+}
+.contact .grid .inputs .mensaje {
+  margin-top: 35px;
+}
+.contact .grid .inputs .mensaje textarea {
+  height: 200px;
+  border: none;
+  border-radius: 8px;
+  background-color: #363535;
+  margin-top: 5px;
+  padding-left: 25px;
+  padding-top: 25px;
+  font-size: 1rem;
+}
+.contact .grid .inputs .btn-s {
+  width: 170px;
+  padding: 0;
+  background-color: #feb633;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 35px 0 35px 0;
 }
 
 .card {
@@ -223,7 +304,7 @@ html {
 }
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background-color: rgb(3, 35, 54);
+  background-color: #525252;
   padding: 10px;
   color: #cccccc;
   display: flex;
@@ -255,4 +336,18 @@ html {
 
 .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
+}
+
+.footer {
+  background-color: #525252;
+  height: 60px;
+  border-top: solid 1px #363535;
+  color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.footer span {
+  color: #feb633;
 }/*# sourceMappingURL=main.css.map */

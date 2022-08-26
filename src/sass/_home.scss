@@ -1,24 +1,25 @@
-.inicio{
+.inicio {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
     background-color: $boddy1;
 
-    .info{
+    .info {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        p{
+        p {
             font-size: 1.7rem;
             color: $font;
         }
-        h2{
+
+        h2 {
             font-size: 4.2rem;
             color: #ffffff;
         }
 
-        .hablemos{
+        .hablemos {
             @extend .btn;
             background-color: $segundario;
             color: #ffffff;
@@ -26,7 +27,7 @@
             width: 250px;
             margin-top: 10px;
 
-            &:hover{
+            &:hover {
                 background-color: transparent;
                 border: solid 1px $segundario;
                 color: $segundario;
@@ -35,90 +36,185 @@
         }
     }
 
-    .img{
+    .img {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        img{
+        img {
             width: 300px;
-            border-radius: 100%;   
+            border-radius: 100%;
         }
 
-        video{
+        video {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            
+
         }
     }
 }
 
-.about{
+.about {
     background-color: $boddy2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 450px;
 
-    .title{
+    .title {
         @extend .flex;
         background-image: url('../img/about_shap_bg.png');
         object-fit: contain;
         background-size: cover;
         background-position: center;
-        h2{
+
+        h2 {
             font-size: 4.2rem;
             color: $font;
         }
     }
 
-    .info{
+    .info {
         @extend .flex;
-        p{
+
+        p {
             font-size: 1.1rem;
             color: $font;
         }
 
-        .btnG{
-            button{
+        .btnG {
+            button {
                 @extend .btn;
                 background-color: $segundario;
                 color: #ffffff;
                 width: 120px;
                 font-size: 1rem;
                 margin: 10px;
-
-                &:hover{
-                    background-color: transparent;
-                    border: solid 1px $segundario;
-                    color: $segundario;
-                    transition: .3s;
-                }
             }
         }
     }
 }
 
-.work{
+.work {
     @extend .flex;
     background-color: $boddy1;
 
-    h2{
+    h2 {
         font-size: 3.5rem;
         color: $font;
         margin-top: 80px;
     }
 
-    p{
+    p {
         font-size: 1.1rem;
         color: $font;
     }
 
-    .cards{
+    .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
         padding: 20px;
+    }
+}
+
+.contact {
+    width: 100%;
+    background-color: $boddy2;
+    padding-top: 80px;
+
+    h2 {
+        font-size: 3.5rem;
+        color: $font;
+        text-align: center;
+    }
+
+    .grid {
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        .info-contact {
+            color: $font;
+            padding-left: 15%;
+
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin: 35px 0;
+            }
+
+            .info-g {
+                .icons {
+                    margin-top: 15px;
+
+                    a {
+                        color: $font;
+                        margin-right: 10px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .inputs {
+            color: $font;
+            padding-right: 15%;
+
+            .flex-i {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .num-mail {
+                display: flex;
+                margin-top: 35px;
+                justify-content: space-between;
+
+
+                input {
+                    width: 350px;
+                }
+            }
+
+            input {
+                height: 60px;
+                border: none;
+                border-radius: 8px;
+                background-color: $boddy1;
+                margin-top: 5px;
+                padding-left: 25px;
+                font-size: 1rem;
+            }
+
+            .mensaje {
+                margin-top: 35px;
+
+                textarea {
+                    height: 200px;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: $boddy1;
+                    margin-top: 5px;
+                    padding-left: 25px;
+                    padding-top: 25px;
+                    font-size: 1rem;
+                }
+            }
+
+            .btn-s{
+                @extend .btn;
+                width: 170px;
+                padding: 0;
+                background-color: $segundario;
+                font-size: 1.1rem;
+                color: #ffffff;
+                margin: 35px 0 35px 0;
+            }
+        }
     }
 }

@@ -8,12 +8,12 @@ const About = () => {
       </div>
       <div className='info'>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Como persona organizada y con una gran motivación, soy capaz de adaptarme a cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto, al mismo tiempo que me esfuerzo por trabajar en equipo y fomentar valores como los del compañerismo. Tengo conocimientos en desarrollo web frontend como html/css, javascript, vue.js, react.js, sass, bootstrap.
         </p>
         <br />
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.</p>
+        <p>También manejo en la parte del backend frameworks como nodeJs, express. Gestores de bases de datos no relacionales y relacionales.</p>
+        <br/>
+        <p>Manejo herramientas indispensables a la hora de desarrollar como son git, gitHub, postman, adobeXD y he trabajado con las metodologias de desarrollo SCRUM y RUP.</p>
         <div className='btnG'>
           <a href='#work'><button>Ver trabajos</button></a>
           <button>Descargar CV</button>

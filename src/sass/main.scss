@@ -35,6 +35,40 @@ $boddy2: #525252;
     align-items: center
 }
 
+.pagination{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    gap: 5px;
+    color: #ffffff;
+
+    .page-num{
+        padding: 8px 10px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-weight: 400;
+
+        &:hover{
+            background-color: #5ab1bb;
+            color: #ffffff;
+        }
+    }
+
+    .page-numF{
+        @extend .btn;
+        background-color: $segundario;
+        padding: 10px;
+    }
+
+    .active{
+        background-color: $segundario
+    }
+}
+
 @import 'navbar';
 @import 'home';
 @import 'card';

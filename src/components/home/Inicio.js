@@ -1,5 +1,5 @@
 import React from 'react'
-import video from '../../img/logo-2.mp4'
+import video from '../../img/Logo-2.mp4'
 
 const Inicio = () => {
     return (

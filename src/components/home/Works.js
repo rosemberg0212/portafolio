@@ -31,6 +31,13 @@ const Works = () => {
         },
         {
             id: uuidv4(),
+            img: 'https://res.cloudinary.com/el-rous/image/upload/v1662938103/Captura_web_11-9-2022_18145_velvety-sprite-4a4e27.netlify.app_eporqb.jpg',
+            nombre: 'Sakura Card Captor',
+            descrip: 'Aplicación hecha en react donde se consume la api de sakura card y se muestra información de sus diferentes cartas.',
+            link: 'https://velvety-sprite-4a4e27.netlify.app/'
+        },
+        {
+            id: uuidv4(),
             img: 'https://res.cloudinary.com/el-rous/image/upload/v1661570797/Captura_web_26-8-2022_22265_app-clima-rous.tk_wsag8y.jpg',
             nombre: 'Weather App',
             descrip: 'Aplicación hecha en ReactJs que consulta información del clima de diferentes ciudades del mundo, consumiendo la api weather.',
@@ -50,34 +57,6 @@ const Works = () => {
             descrip: 'Landing Page de una tienda virtual del negocio la casa del arte.',
             link: 'https://lacasadelarte.tk/'
         },
-        {
-            id: uuidv4(),
-            img: 'https://res.cloudinary.com/el-rous/image/upload/v1654207832/lb9wwabylkeyyin5hqof.jpg',
-            nombre: 'Nombre App',
-            descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            link: ''
-        },
-        {
-            id: uuidv4(),
-            img: 'https://res.cloudinary.com/el-rous/image/upload/v1654207832/lb9wwabylkeyyin5hqof.jpg',
-            nombre: 'Nombre App',
-            descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            link: ''
-        },
-        {
-            id: uuidv4(),
-            img: 'https://res.cloudinary.com/el-rous/image/upload/v1654207832/lb9wwabylkeyyin5hqof.jpg',
-            nombre: 'Nombre App',
-            descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            link: ''
-        },
-        {
-            id: uuidv4(),
-            img: 'https://res.cloudinary.com/el-rous/image/upload/v1654207832/lb9wwabylkeyyin5hqof.jpg',
-            nombre: 'Nombre App',
-            descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            link: ''
-        }
     ]
 
     useEffect(() => {

@@ -306,6 +306,7 @@ html {
 @media (max-width: 655px) {
   .inicio {
     grid-template-columns: 1fr;
+    height: 400px;
   }
   .inicio .info {
     padding: 10px;
@@ -318,6 +319,7 @@ html {
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+    display: none;
   }
   .about {
     grid-template-columns: 1fr;

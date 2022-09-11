@@ -222,6 +222,7 @@
 @media (max-width: 655px) {
     .inicio {
         grid-template-columns: 1fr;
+        height: 400px;
 
         .info {
             padding: 10px;
@@ -235,6 +236,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+                display: none;
             }
         }
     }

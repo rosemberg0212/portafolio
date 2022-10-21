@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa'
 import { IoMdMail } from 'react-icons/io'
 import { ImWhatsapp } from 'react-icons/im'
@@ -9,8 +9,33 @@ import Swal from 'sweetalert2'
 
 const Contac = () => {
 
+  const [datos, setdatos] = useState({
+    nombre: '',
+    tel: '',
+    mail: '',
+    area: ''
+  })
+
+  const {nombre, tel, mail, area} = datos;
+
+  const onchange = (e) => {
+    setdatos({
+      ...datos,
+      [e.target.name]: e.target.value
+    })
+  }
+
   const onSubmit = (e) => {
     e.preventDefault();
+
+    if(nombre.trim() === '' || tel.trim() === '' || mail.trim() === '' || area.trim() === ''){
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Rellene los campos'
+      })
+      return
+    }
 
     emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
@@ -53,21 +78,21 @@ const Contac = () => {
           <form onSubmit={onSubmit}>
             <div className='nombre flex-i'>
               <label htmlFor='nombre'>NOMBRE</label>
-              <input type='text' name='nombre' id='nombre' placeholder='Digite su numbre' />
+              <input type='text' name='nombre' id='nombre' value={nombre} onChange={onchange} placeholder='Digite su numbre' />
             </div>
             <div className='num-mail'>
               <div className='flex-i'>
                 <label htmlFor='tel'>NÚMERO DE TELÉFONO</label>
-                <input type='tel' name='tel' id='tel' placeholder='Digite su teléfono' />
+                <input type='tel' name='tel' id='tel' value={tel} onChange={onchange} placeholder='Digite su teléfono' />
               </div>
               <div className='flex-i'>
                 <label htmlFor='mail'>EMAIL</label>
-                <input type='mail' name='mail' id='mail' placeholder='Digite su correo' />
+                <input type='mail' name='mail' id='mail' value={mail} onChange={onchange} placeholder='Digite su correo' />
               </div>
             </div>
             <div className='mensaje flex-i'>
               <label htmlFor='area'>SU MENSAJE</label>
-              <textarea id='area' name='area' placeholder='Digite su mensaje' />
+              <textarea id='area' name='area' value={area} onChange={onchange} placeholder='Digite su mensaje' />
             </div>
             <input type='submit' value='Enviar' className='btn-s' />
           </form>

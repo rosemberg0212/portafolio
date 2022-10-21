@@ -48,7 +48,7 @@ const Works = () => {
             img: 'https://res.cloudinary.com/el-rous/image/upload/v1662863129/Captura_web_10-9-2022_212454_reto4-juventic.herokuapp.com_dwiqsx.jpg',
             nombre: 'Carrito de compras',
             descrip: 'Carrito de compras de restaurante desarrollado con React y Nodejs.',
-            link: 'https://www3.animeflv.net/ver/overlord-iv-2'
+            link: 'https://reto4-juventic.herokuapp.com/home'
         },
         {
             id: uuidv4(),

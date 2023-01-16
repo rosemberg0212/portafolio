@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
 import styles from './card.module.css'
-import { Link } from 'react-router-dom'
 
 const Card = (props) => {
     const { data } = props;
@@ -45,7 +44,7 @@ const Card = (props) => {
                                 <img className={styles.icon} src={item.icon} alt='img' />
                                 <img className={styles.icon} src={item.icon2} alt='img' />
                             </div>
-                            <a href={item.link} target='_blank'>
+                            <a href={item.link} target='_blank' rel='noreferrer noopener'>
                                 <button>Ver trabajo</button>
                             </a>
 

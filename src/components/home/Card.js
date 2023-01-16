@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
+import styles from './card.module.css'
+import { Link } from 'react-router-dom'
 
 const Card = (props) => {
     const { data } = props;
@@ -8,9 +10,9 @@ const Card = (props) => {
     const [itemOffset, setItemOffset] = useState(0);
     var itemsPerPage
 
-    if(window.screen.width <= 655 || window.screen.height <= 760){
+    if (window.screen.width <= 655 || window.screen.height <= 760) {
         itemsPerPage = 4
-    }else{
+    } else {
         itemsPerPage = 6
     }
 
@@ -31,20 +33,26 @@ const Card = (props) => {
 
     return (
         <>
-            <div className='cards'>
+            <div className={styles.cards}>
                 {currentItems.map((item) => (
-                    <div key={item?.id}>
-                        <div className='card'>
-                            <div className='face front'>
-                                <img src={item?.img} alt='fondo' />
-                                <h3>{item?.nombre}</h3>
+                    <div key={item.id} className={styles.card} >
+                        <div className={styles.infoCard}>
+                            <p className={styles.title}>{item.nombre}</p>
+                            <p className={styles.des}>
+                                {item.descrip}
+                            </p>
+                            <div className={styles.items}>
+                                <img className={styles.icon} src={item.icon} alt='img' />
+                                <img className={styles.icon} src={item.icon2} alt='img' />
                             </div>
-                            <div className='face back'>
-                                <h3>{item?.nombre}</h3>
-                                <p>{item?.descrip}</p>
-                                <div className='link'>
-                                    <a href={item?.link} target='_blank' rel="noopener noreferrer">Link</a>
-                                </div>
+                            <a href={item.link} target='_blank'>
+                                <button>Ver trabajo</button>
+                            </a>
+
+                        </div>
+                        <div className={styles.contenImg}>
+                            <div className={styles.img}>
+                                <img src={item.img} alt='img' />
                             </div>
                         </div>
                     </div>

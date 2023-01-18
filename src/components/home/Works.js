@@ -11,6 +11,15 @@ const Works = () => {
         {
             id: uuidv4(),
             img: 'https://res.cloudinary.com/el-rous/image/upload/v1673745985/netflix_vuv9pc.png',
+            nombre: 'Match app',
+            descrip: 'Aplicación para mostrar partidos de fútbol en vivo y reslutados.',
+            link: 'https://sparkly-kataifi-0d578d.netlify.app/',
+            icon: 'https://cdn-icons-png.flaticon.com/512/875/875209.png',
+            icon2: 'https://cdn-icons-png.flaticon.com/512/1493/1493169.png'
+        },
+        {
+            id: uuidv4(),
+            img: 'https://res.cloudinary.com/el-rous/image/upload/v1673745985/netflix_vuv9pc.png',
             nombre: 'Clon Netflix',
             descrip: 'Maquetación de un clon de netflix consumiendo la api the moviedb.',
             link: 'https://rococo-froyo-a6d80c.netlify.app/',

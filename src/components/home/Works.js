@@ -10,9 +10,9 @@ const Works = () => {
     const proyectos = [
         {
             id: uuidv4(),
-            img: 'https://res.cloudinary.com/el-rous/image/upload/v1673745985/netflix_vuv9pc.png',
+            img: 'https://res.cloudinary.com/el-rous/image/upload/v1674159514/match_qy7ylk.png',
             nombre: 'Match app',
-            descrip: 'Aplicación para mostrar partidos de fútbol en vivo y reslutados.',
+            descrip: 'Aplicación para mostrar partidos de fútbol en vivo y sus reslutados.',
             link: 'https://sparkly-kataifi-0d578d.netlify.app/',
             icon: 'https://cdn-icons-png.flaticon.com/512/875/875209.png',
             icon2: 'https://cdn-icons-png.flaticon.com/512/1493/1493169.png'
